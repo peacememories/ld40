@@ -40,7 +40,7 @@ public class GameScript : MonoBehaviour {
     private string[] LastNames = { };
 
     [SerializeField]
-    private float PersonDelay = 5;
+    public float PersonDelay = 5;
 
     [SerializeField]
     private int MaximumQueued = 3;
@@ -48,7 +48,7 @@ public class GameScript : MonoBehaviour {
     public HashSet<Person> SeatedPeople = new HashSet<Person>();
     public Queue<Person> ToBeSeated = new Queue<Person>();
 
-    private float timeRemaining = 0;
+    public float timeRemaining = 0;
 
 	// Use this for initialization
 	void Start () {
